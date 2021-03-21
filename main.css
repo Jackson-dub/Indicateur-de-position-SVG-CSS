@@ -1,0 +1,283 @@
+     /* globales */
+     h1 {
+       max-width: 1200px;
+       text-align: center;
+       margin: 2rem auto;
+     }
+
+     .container {
+       background-image: url('/stylish-blue-technology-circuit-diagram-lines-background/19187759.jpg');
+       background-repeat: no-repeat;
+       background-size: 100% 100%;
+       background-position: center center;
+       display: flex;
+       padding: 2rem;
+       max-width: 1200px;
+       justify-content: center;
+       align-items: center;
+       margin: auto;
+     }
+
+
+     /* Menu */
+
+     .menu {
+       flex: 1 1 30%;
+       padding: 1rem 2rem;
+       order: -1;
+     }
+
+     .menu .positionTile {
+       animation: slide 7s forwards linear;
+       transform-origin: 7.5px 7.5px;
+       animation-delay: 2.5s;
+     }
+
+
+     #Li1 {
+       transform-origin: 78.375px 78.5px;
+       animation: spin1 8s forwards ease 4.44s;
+     }
+
+     #Li1 .st5y {
+       animation: fillUp 0.2s forwards ease-in-out 8.44s;
+     }
+
+     #Li2 {
+       transform-origin: 78.375px 149.5px;
+       animation: spin2 8s forwards ease 6.19s;
+     }
+
+     #Li2 .st5y {
+       animation: fillUp 0.2s forwards ease-in-out 10.19s;
+     }
+
+     #Li3 {
+       transform-origin: 78.375px 220.5px;
+       animation: spin2 8s forwards ease 7.94s;
+     }
+
+     #Li3 .st5y {
+       animation: fillUp 0.2s forwards ease-in-out 11.94s;
+     }
+
+     #bullet3 {
+       transform-origin: 7.5px 149.5px;
+       animation: shine 1s infinite linear 6.19s;
+     }
+
+     #bullet4 {
+       transform-origin: 7px 220.5px;
+       animation: shine 1s infinite linear 7.94s;
+     }
+
+     #bullet5 {
+       transform-origin: 7.5px 291.5px;
+       animation: shine 1s infinite linear 9.5s;
+     }
+
+     #bullet2 {
+       transform-origin: 7.5px 78.5px;
+       animation: shine 1s infinite linear 4.44s;
+     }
+
+     #bullet1 {
+       transform-origin: 7.5px 7.5px;
+       animation: shine 1s infinite linear 2s;
+     }
+
+     @keyframes slide {
+       0% {
+         transform: translateY(0);
+         filter: drop-shadow(1px 1px 20px #fff);
+       }
+
+       100% {
+         transform: translateY(94.7%);
+         visibility: hidden;
+       }
+     }
+
+     @keyframes spin1 {
+       0% {
+         transform: rotateX(90deg) translateY(0);
+       }
+
+       50% {
+         transform: rotateX(0);
+       }
+
+       100% {
+         transform: translateY(47.5%);
+       }
+     }
+
+     @keyframes spin2 {
+       0% {
+         transform: rotateX(90deg) translateY(0);
+       }
+
+       50% {
+         transform: rotateX(0);
+       }
+
+       100% {
+         transform: translateY(-25%);
+       }
+     }
+
+     @keyframes fillUp {
+       0% {
+         fill: none;
+       }
+
+       100% {
+         fill: #4D6AFF;
+       }
+     }
+
+
+     /*indicateur de position  */
+     .track {
+       flex: 1 1 70%;
+       padding: 1rem;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+     }
+
+     .track svg {
+       max-width: 500px;
+     }
+
+     #patern {
+       stroke-dasharray: 1392.71px;
+       stroke-dashoffset: 1392.71px;
+       animation: draw2 5s forwards linear;
+
+     }
+
+     .st4 {
+       visibility: hidden;
+     }
+
+     #R1 {
+       fill: none;
+       transform-origin: 274.5px 145.6px;
+       animation: appear 0.5s forwards ease, shine 1s infinite linear;
+       animation-delay: 5.5s, 5.5s;
+     }
+
+     #R2 {
+       fill: none;
+       animation: appear 0.5s forwards ease, shine 1s infinite linear;
+       animation-delay: 5.5s, 8.3s;
+       transform-origin: 396.5px 72.1px;
+
+     }
+
+     #R3 {
+       fill: none;
+       animation: appear 0.5s forwards ease, shine 1s infinite linear;
+       animation-delay: 5.5s, 9.5s;
+       transform-origin: 278.3px 4.5px;
+     }
+
+     #R4 {
+       fill: none;
+       animation: appear 0.5s forwards ease, shine 1s infinite linear;
+       animation-delay: 5.5s, 11.3s;
+       transform-origin: 93.9px 45.6px;
+     }
+
+     #R5 {
+       fill: none;
+       animation: appear 0.5s forwards ease, shine 1s infinite linear;
+       animation-delay: 5.5s, 12.5s;
+       transform-origin: 4.5px 140.3px;
+     }
+
+     #R6 {
+       fill: none;
+       animation: appear 0.5s forwards ease, shine 1s infinite linear;
+       animation-delay: 5.5s, 13.5s;
+       transform-origin: 60.5px 210.3px;
+     }
+
+     #R7 {
+       fill: none;
+       animation: appear 0.5s forwards ease, shine 1s infinite linear;
+       animation-delay: 5.5s, 14.8s;
+       transform-origin: 170.9px 141.4px;
+     }
+
+     #R8 {
+       fill: none;
+       animation: appear 0.5s forwards ease, shine 1s infinite linear;
+       animation-delay: 5.5s, 17s;
+       transform-origin: 342.6px 273.4px;
+     }
+
+     .positionTile {
+       filter: drop-shadow(0px 0px 50px #fff);
+       fill: #fff;
+       stroke: #fff;
+     }
+
+     @keyframes shine {
+       0% {
+         fill: #fff;
+         transform: scale(1.200000, 1.200000);
+         filter: drop-shadow(1px 1px 20px #fff);
+       }
+
+       100% {
+         fill: #fff;
+         transform: scale(1);
+       }
+     }
+
+     @keyframes draw1 {
+       0% {
+
+         stroke-dashoffset: 1392.71px;
+
+       }
+
+       100% {
+         stroke-dashoffset: 0px;
+       }
+     }
+
+     @keyframes draw2 {
+       0% {
+         stroke-dashoffset: 1392.71px;
+         transform: scale(1.02);
+         opactity: 1;
+       }
+
+       100% {
+         stroke-dashoffset: 0;
+         transform: scale(1);
+         opactity: 0.7;
+       }
+     }
+
+     @keyframes appear {
+       0% {
+         visibility: hidden;
+       }
+
+       100% {
+         visibility: visible;
+         fill: #4D6AFF;
+       }
+     }
+
+     #droits {
+       max-width: 1200px;
+       text-align: center;
+       margin: 2.5rem auto;
+       font-size: 1rem;
+       font-style: italic;
+     }
